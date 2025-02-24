@@ -8,11 +8,10 @@ class subvector {
      unsigned int capacity;
 
     public:
-void init() {
+subvector() {
     top = 0;
     capacity = 0;
     mas = NULL;
-    return;
 }
 
 void push_back(int d) {
@@ -104,7 +103,7 @@ void clear() {
 	top = 0;
 }
 
-void destructor() {
+~subvector() {
 		delete[] mas;
 }
 };
