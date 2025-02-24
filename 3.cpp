@@ -11,7 +11,7 @@ protected:
 	int ma;
 	int mb;
 public:
-	void StrA() {
+	MatrixA() {
 		int n, m;
 		cin >> n >> m;
 		na = n;
@@ -29,7 +29,7 @@ public:
 			}
 		}
         }
-	void StrB() {
+	MatrixB() {
                 int n, m;
                 cin >> n >> m;
 		nb = n;
@@ -47,13 +47,13 @@ public:
                         }
                 }
         }
-	void DestrA() {
+	~MatrixA() {
 		for (int i = 0; i < na; i++) {
         		delete[] A[i];
     		}
     		delete[] A;
 	}
-	void DestrB() {
+	~MatrixB() {
                 for (int i = 0; i < nb; i++) {
                         delete[] B[i];
                 }
